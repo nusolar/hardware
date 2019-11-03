@@ -7061,7 +7061,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="CURRENT_IN" library="con-molex-mini-fit" deviceset="39-30-?02?_S" device=""/>
 <part name="IGNITION" library="con-molex-mini-fit" deviceset="39-30-?02?_S" device=""/>
 <part name="CAN_CONN_OUT" library="con-molex-mini-fit" deviceset="39-30-?04?" device=""/>
-<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="VTA55" package3d_urn="urn:adsk.eagle:package:26120/2" value="50K"/>
+<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -7280,12 +7280,12 @@ datasheet
 <attribute name="NAME" x="295.91" y="102.235" size="1.778" layer="95"/>
 <attribute name="VALUE" x="295.91" y="91.44" size="1.778" layer="95"/>
 </instance>
-<instance part="R1" gate="G$1" x="35.56" y="-25.4" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.0614" y="-29.21" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="38.862" y="-29.21" size="1.778" layer="96" rot="R90"/>
+<instance part="R1" gate="G$1" x="35.56" y="-15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.0614" y="-19.05" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="38.862" y="-19.05" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND4" gate="1" x="35.56" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="35.56" y="-33.274" size="1.778" layer="96" align="top-center"/>
+<instance part="GND4" gate="1" x="35.56" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="35.56" y="-23.114" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -7799,14 +7799,14 @@ datasheet
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="A2"/>
-<wire x1="33.02" y1="17.78" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
 <label x="33.02" y="7.62" size="1.778" layer="95" rot="R90"/>
+<wire x1="33.02" y1="17.78" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="A3"/>
-<wire x1="35.56" y1="17.78" x2="35.56" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="17.78" x2="35.56" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
