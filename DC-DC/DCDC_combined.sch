@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -151,6 +151,23 @@
 <wire x1="12.7" y1="2.54" x2="12.7" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="12.7" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
 </package>
+<package name="VI-J00">
+<pad name="P$1" x="0" y="0" drill="2.2606" shape="square"/>
+<pad name="P$2" x="0" y="10.16" drill="2.2606"/>
+<pad name="P$3" x="0" y="25.4" drill="2.2606"/>
+<pad name="P$4" x="0" y="35.56" drill="2.2606"/>
+<pad name="P$5" x="48.26" y="0" drill="3.6576"/>
+<pad name="P$6" x="48.26" y="10.16" drill="2.2606"/>
+<pad name="P$7" x="48.26" y="17.78" drill="2.2606"/>
+<pad name="P$8" x="48.26" y="25.4" drill="2.2606"/>
+<pad name="P$9" x="48.26" y="35.56" drill="3.6576"/>
+<hole x="7.62" y="-8.89" drill="3.81"/>
+<hole x="24.13" y="-8.89" drill="3.81"/>
+<hole x="40.64" y="-8.89" drill="3.81"/>
+<hole x="40.64" y="44.45" drill="3.81"/>
+<hole x="24.13" y="44.45" drill="3.81"/>
+<hole x="7.62" y="44.45" drill="3.81"/>
+</package>
 <package name="MPDCD3B">
 <pad name="P$4" x="0" y="0" drill="1.2"/>
 <pad name="P$3" x="0" y="5.08" drill="1.2"/>
@@ -173,6 +190,23 @@
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
+<symbol name="VI-J00">
+<pin name="IN+" x="-17.78" y="10.16" length="middle"/>
+<pin name="GATE_IN" x="-17.78" y="5.08" length="middle"/>
+<pin name="GATE_OUT" x="-17.78" y="-5.08" length="middle"/>
+<pin name="IN-" x="-17.78" y="-10.16" length="middle"/>
+<pin name="OUT-" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="S-" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="T" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="S+" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="OUT+" x="15.24" y="10.16" length="middle" rot="R180"/>
+<text x="-12.7" y="12.954" size="1.27" layer="94">&gt;NAME</text>
+<text x="-15.24" y="-14.224" size="1.27" layer="94">&gt;VALUE</text>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+</symbol>
 <symbol name="MPDCD3B">
 <pin name="LOAD_IN" x="-7.62" y="7.62" length="middle"/>
 <pin name="LOAD_OUT" x="-7.62" y="5.08" length="middle"/>
@@ -194,6 +228,29 @@
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VI-JT1-EW">
+<gates>
+<gate name="G$1" symbol="VI-J00" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VI-J00">
+<connects>
+<connect gate="G$1" pin="GATE_IN" pad="P$3"/>
+<connect gate="G$1" pin="GATE_OUT" pad="P$2"/>
+<connect gate="G$1" pin="IN+" pad="P$4"/>
+<connect gate="G$1" pin="IN-" pad="P$1"/>
+<connect gate="G$1" pin="OUT+" pad="P$9"/>
+<connect gate="G$1" pin="OUT-" pad="P$5"/>
+<connect gate="G$1" pin="S+" pad="P$8"/>
+<connect gate="G$1" pin="S-" pad="P$6"/>
+<connect gate="G$1" pin="T" pad="P$7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -649,6 +706,8 @@ Source: &lt;a href="https://belfuse.com/resources/PowerSolutions/0rqb-d0w12l/ds-
 </class>
 </classes>
 <parts>
+<part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
+<part name="U$11" library="NUSOLAR_Custom" deviceset="VI-JT1-EW" device=""/>
 <part name="CAN_SIGNAL" library="con-molex-mini-fit" deviceset="39-30-?02?_S" device=""/>
 <part name="AUX_IN" library="con-molex-mini-fit" deviceset="39-30-?02?_S" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -673,18 +732,6 @@ Source: &lt;a href="https://belfuse.com/resources/PowerSolutions/0rqb-d0w12l/ds-
 <part name="U$5" library="NUSOLAR_Custom" deviceset="4700PF" device=""/>
 <part name="BAT_CONNECT1" library="con-molex-mini-fit" deviceset="39-30-?02?_S" device=""/>
 <part name="PS1" library="SamacSys_Parts" deviceset="0RQB-D0W12LG" device=""/>
-<part name="F2" library="f-lf-omniblok-s" deviceset="SMD-MICRO-FUSE" device="-BLOCK" value="4A"/>
-<part name="FUN-OUTPUT-2" library="con-molex-mini-fit" deviceset="39-30-?04?" device=""/>
-<part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="F3" library="f-lf-omniblok-s" deviceset="SMD-MICRO-FUSE" device="-BLOCK" value="4A"/>
-<part name="FUN-OUTPUT-3" library="con-molex-mini-fit" deviceset="39-30-?04?" device=""/>
-<part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="F6" library="f-lf-omniblok-s" deviceset="SMD-MICRO-FUSE" device="-BLOCK" value="4A"/>
-<part name="FUN-OUTPUT-4" library="con-molex-mini-fit" deviceset="39-30-?04?" device=""/>
-<part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="F8" library="f-lf-omniblok-s" deviceset="SMD-MICRO-FUSE" device="-BLOCK" value="4A"/>
-<part name="FUN-OUTPUT-5" library="con-molex-mini-fit" deviceset="39-30-?04?" device=""/>
-<part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -697,6 +744,13 @@ Source: &lt;a href="https://belfuse.com/resources/PowerSolutions/0rqb-d0w12l/ds-
 <text x="-264.16" y="30.48" size="1.778" layer="94">"-_CONNECT" means it goes to the other side of the board</text>
 </plain>
 <instances>
+<instance part="SUPPLY9" gate="G$1" x="-170.18" y="12.7" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="-169.164" y="16.256" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="U$11" gate="G$1" x="-299.72" y="111.76" smashed="yes">
+<attribute name="NAME" x="-312.42" y="124.714" size="1.27" layer="94"/>
+<attribute name="VALUE" x="-314.96" y="97.536" size="1.27" layer="94"/>
+</instance>
 <instance part="CAN_SIGNAL" gate="-1" x="-157.48" y="-99.06" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="-154.94" y="-101.6" size="1.778" layer="96" ratio="12" rot="R180"/>
 <attribute name="PART" x="-154.94" y="-104.14" size="1.778" layer="95" ratio="12" rot="R180"/>
@@ -799,50 +853,6 @@ Source: &lt;a href="https://belfuse.com/resources/PowerSolutions/0rqb-d0w12l/ds-
 <attribute name="NAME" x="-204.47" y="132.08" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-204.47" y="129.54" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="F2" gate="F1" x="-139.7" y="38.1" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-135.89" y="39.497" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-135.89" y="35.179" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="FUN-OUTPUT-2" gate="G$1" x="-114.3" y="35.56" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-110.49" y="41.275" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-110.49" y="30.48" size="1.778" layer="95" rot="MR0"/>
-</instance>
-<instance part="GND2" gate="1" x="-96.52" y="30.48" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-93.98" y="27.94" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="F3" gate="F1" x="-139.7" y="22.86" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-135.89" y="24.257" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-135.89" y="19.939" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="FUN-OUTPUT-3" gate="G$1" x="-114.3" y="20.32" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-110.49" y="26.035" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-110.49" y="15.24" size="1.778" layer="95" rot="MR0"/>
-</instance>
-<instance part="GND3" gate="1" x="-96.52" y="15.24" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-93.98" y="12.7" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="F6" gate="F1" x="-142.24" y="7.62" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-138.43" y="9.017" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-138.43" y="4.699" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="FUN-OUTPUT-4" gate="G$1" x="-116.84" y="5.08" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-113.03" y="10.795" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-113.03" y="0" size="1.778" layer="95" rot="MR0"/>
-</instance>
-<instance part="GND4" gate="1" x="-99.06" y="0" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-96.52" y="-2.54" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="F8" gate="F1" x="-137.16" y="-12.7" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-133.35" y="-11.303" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-133.35" y="-15.621" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="FUN-OUTPUT-5" gate="G$1" x="-111.76" y="-15.24" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-107.95" y="-9.525" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-107.95" y="-20.32" size="1.778" layer="95" rot="MR0"/>
-</instance>
-<instance part="GND7" gate="1" x="-93.98" y="-20.32" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-91.44" y="-22.86" size="1.778" layer="96" rot="MR0"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -909,30 +919,6 @@ Source: &lt;a href="https://belfuse.com/resources/PowerSolutions/0rqb-d0w12l/ds-
 <wire x1="-198.12" y1="124.46" x2="-198.12" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="PS1" gate="G$1" pin="VOUT_(-)"/>
 </segment>
-<segment>
-<pinref part="FUN-OUTPUT-2" gate="G$1" pin="1"/>
-<wire x1="-106.68" y1="38.1" x2="-96.52" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="-96.52" y1="33.02" x2="-96.52" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-3" gate="G$1" pin="1"/>
-<wire x1="-106.68" y1="22.86" x2="-96.52" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="-96.52" y1="17.78" x2="-96.52" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-4" gate="G$1" pin="1"/>
-<wire x1="-109.22" y1="7.62" x2="-99.06" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="-99.06" y1="2.54" x2="-99.06" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-5" gate="G$1" pin="1"/>
-<wire x1="-104.14" y1="-12.7" x2="-93.98" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="-93.98" y1="-17.78" x2="-93.98" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="12V" class="0">
 <segment>
@@ -992,26 +978,6 @@ Source: &lt;a href="https://belfuse.com/resources/PowerSolutions/0rqb-d0w12l/ds-
 <wire x1="-139.7" y1="63.5" x2="-149.86" y2="63.5" width="0.1524" layer="91"/>
 <label x="-139.7" y="63.5" size="1.778" layer="95" rot="MR0"/>
 </segment>
-<segment>
-<pinref part="FUN-OUTPUT-2" gate="G$1" pin="4"/>
-<wire x1="-121.92" y1="35.56" x2="-132.08" y2="35.56" width="0.1524" layer="91"/>
-<label x="-121.92" y="35.56" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-3" gate="G$1" pin="4"/>
-<wire x1="-121.92" y1="20.32" x2="-132.08" y2="20.32" width="0.1524" layer="91"/>
-<label x="-121.92" y="20.32" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-4" gate="G$1" pin="4"/>
-<wire x1="-124.46" y1="5.08" x2="-134.62" y2="5.08" width="0.1524" layer="91"/>
-<label x="-124.46" y="5.08" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-5" gate="G$1" pin="4"/>
-<wire x1="-119.38" y1="-15.24" x2="-129.54" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-119.38" y="-15.24" size="1.778" layer="95" rot="MR0"/>
-</segment>
 </net>
 <net name="CAN_L" class="0">
 <segment>
@@ -1034,26 +1000,6 @@ Source: &lt;a href="https://belfuse.com/resources/PowerSolutions/0rqb-d0w12l/ds-
 <wire x1="-124.46" y1="63.5" x2="-116.84" y2="63.5" width="0.1524" layer="91"/>
 <label x="-116.84" y="63.5" size="1.778" layer="95" rot="MR0"/>
 </segment>
-<segment>
-<pinref part="FUN-OUTPUT-2" gate="G$1" pin="3"/>
-<wire x1="-106.68" y1="35.56" x2="-99.06" y2="35.56" width="0.1524" layer="91"/>
-<label x="-99.06" y="35.56" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-3" gate="G$1" pin="3"/>
-<wire x1="-106.68" y1="20.32" x2="-99.06" y2="20.32" width="0.1524" layer="91"/>
-<label x="-99.06" y="20.32" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-4" gate="G$1" pin="3"/>
-<wire x1="-109.22" y1="5.08" x2="-101.6" y2="5.08" width="0.1524" layer="91"/>
-<label x="-101.6" y="5.08" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-5" gate="G$1" pin="3"/>
-<wire x1="-104.14" y1="-15.24" x2="-96.52" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-96.52" y="-15.24" size="1.778" layer="95" rot="MR0"/>
-</segment>
 </net>
 <net name="IN+" class="0">
 <segment>
@@ -1075,30 +1021,6 @@ Source: &lt;a href="https://belfuse.com/resources/PowerSolutions/0rqb-d0w12l/ds-
 <pinref part="F1" gate="F1" pin="1"/>
 <wire x1="-134.62" y1="137.16" x2="-147.32" y2="137.16" width="0.1524" layer="91"/>
 <label x="-134.62" y="137.16" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-2" gate="G$1" pin="2"/>
-<pinref part="F2" gate="F1" pin="1"/>
-<wire x1="-121.92" y1="38.1" x2="-134.62" y2="38.1" width="0.1524" layer="91"/>
-<label x="-121.92" y="38.1" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-3" gate="G$1" pin="2"/>
-<pinref part="F3" gate="F1" pin="1"/>
-<wire x1="-121.92" y1="22.86" x2="-134.62" y2="22.86" width="0.1524" layer="91"/>
-<label x="-121.92" y="22.86" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-4" gate="G$1" pin="2"/>
-<pinref part="F6" gate="F1" pin="1"/>
-<wire x1="-124.46" y1="7.62" x2="-137.16" y2="7.62" width="0.1524" layer="91"/>
-<label x="-124.46" y="7.62" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="FUN-OUTPUT-5" gate="G$1" pin="2"/>
-<pinref part="F8" gate="F1" pin="1"/>
-<wire x1="-119.38" y1="-12.7" x2="-132.08" y2="-12.7" width="0.1524" layer="91"/>
-<label x="-119.38" y="-12.7" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -1161,18 +1083,6 @@ Source: &lt;a href="https://belfuse.com/resources/PowerSolutions/0rqb-d0w12l/ds-
 <segment>
 <pinref part="F7" gate="F1" pin="2"/>
 <wire x1="-162.56" y1="83.82" x2="-162.56" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="66.04" x2="-162.56" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="38.1" x2="-149.86" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="38.1" x2="-162.56" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="22.86" x2="-149.86" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="22.86" x2="-162.56" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="7.62" x2="-152.4" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="7.62" x2="-162.56" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="-12.7" x2="-147.32" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="-162.56" y="7.62"/>
-<junction x="-162.56" y="22.86"/>
-<junction x="-162.56" y="38.1"/>
-<junction x="-162.56" y="66.04"/>
 </segment>
 </net>
 <net name="IN(-)" class="0">
@@ -1196,28 +1106,10 @@ Source: &lt;a href="https://belfuse.com/resources/PowerSolutions/0rqb-d0w12l/ds-
 <junction x="-241.3" y="121.92"/>
 </segment>
 </net>
-<net name="12V1" class="0">
+<net name="N$1" class="0">
 <segment>
-<pinref part="F2" gate="F1" pin="2"/>
-<wire x1="-144.78" y1="38.1" x2="-149.86" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="12V2" class="0">
-<segment>
-<pinref part="F3" gate="F1" pin="2"/>
-<wire x1="-144.78" y1="22.86" x2="-149.86" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="12V3" class="0">
-<segment>
-<pinref part="F6" gate="F1" pin="2"/>
-<wire x1="-147.32" y1="7.62" x2="-152.4" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="12V4" class="0">
-<segment>
-<pinref part="F8" gate="F1" pin="2"/>
-<wire x1="-142.24" y1="-12.7" x2="-147.32" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-279.4" y1="129.54" x2="-279.4" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-279.4" y1="101.6" x2="-292.1" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
