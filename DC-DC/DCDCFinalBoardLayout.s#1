@@ -2201,15 +2201,6 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <wire x1="-144.78" y1="139.7" x2="-139.7" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="MH1"/>
-<wire x1="-116.84" y1="142.24" x2="-111.76" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="142.24" x2="-111.76" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="MH1"/>
-<wire x1="-111.76" y1="162.56" x2="-116.84" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
