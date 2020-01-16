@@ -151,6 +151,8 @@
 <hole x="82.042" y="133.476" drill="4"/>
 <hole x="82.042" y="146.049" drill="4"/>
 <hole x="81.661" y="120.141" drill="4"/>
+<dimension x1="153.543" y1="195.072" x2="3.048" y2="195.072" x3="78.2955" y3="194.691" textsize="1.778" layer="1"/>
+<dimension x1="155.321" y1="194.691" x2="155.321" y2="67.437" x3="162.814" y3="131.064" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="SamacSys_Parts">

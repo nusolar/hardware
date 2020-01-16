@@ -140,11 +140,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="1.778" y1="68.326" x2="153.34" y2="67.818" width="0" layer="20"/>
-<wire x1="153.34" y1="67.818" x2="154.483" y2="194.808" width="0" layer="20"/>
-<wire x1="154.483" y1="194.808" x2="2.667" y2="195.443" width="0" layer="20"/>
-<wire x1="2.667" y1="195.443" x2="1.778" y2="68.326" width="0" layer="20"/>
-<dimension x1="154.305" y1="74.803" x2="154.178" y2="188.595" x3="163.251828125" y3="131.709053125" textsize="1.778" layer="1"/>
+<wire x1="1.5" y1="67" x2="155" y2="67" width="0" layer="20"/>
+<wire x1="155" y1="67" x2="155" y2="195" width="0" layer="20"/>
+<wire x1="155" y1="195" x2="2.7" y2="195" width="0" layer="20"/>
+<wire x1="2.7" y1="195" x2="1.5" y2="67" width="0" layer="20"/>
 <hole x="22" y="191" drill="4"/>
 <hole x="22" y="71.5" drill="4"/>
 <hole x="127" y="71.5" drill="4"/>
@@ -917,15 +916,23 @@ design rules under a new name.</description>
 <wire x1="14.5159" y1="79.5301" x2="8.04504375" y2="79.5301" width="0.4" layer="1"/>
 <wire x1="6.8501" y1="82.41495625" x2="8.89" y2="84.45485625" width="0.4" layer="1"/>
 <wire x1="8.89" y1="84.45485625" x2="8.89" y2="88.27" width="0.4" layer="1"/>
-<wire x1="116.718" y1="85.217" x2="108.458" y2="95.377" width="0" layer="19" extent="1-1"/>
-<wire x1="86.238" y1="81.407" x2="108.458" y2="95.377" width="0" layer="19" extent="1-1"/>
-<wire x1="62.277" y1="87.884" x2="86.238" y2="81.407" width="0" layer="19" extent="1-1"/>
-<wire x1="37.385" y1="88.265" x2="62.277" y2="87.884" width="0" layer="19" extent="1-1"/>
-<wire x1="16.449" y1="77.597" x2="37.385" y2="88.265" width="0" layer="19" extent="1-1"/>
-<wire x1="110.4392" y1="174.5742" x2="109.098" y2="177.927" width="0" layer="19" extent="1-1"/>
-<wire x1="123.6472" y1="158.9278" x2="124.8664" y2="167.767" width="0" layer="19" extent="1-16"/>
-<wire x1="123.698" y1="158.877" x2="123.6472" y2="158.9278" width="0" layer="19" extent="1-1"/>
-<wire x1="119.888" y1="158.877" x2="119.9769" y2="158.9405" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="3.048" y="194.691"/>
+<vertex x="155.321" y="194.691"/>
+<vertex x="155.321" y="67.437"/>
+<vertex x="154.432" y="66.548"/>
+<vertex x="1.778" y="66.548"/>
+<vertex x="3.048" y="67.818"/>
+</polygon>
+<polygon width="0.1524" layer="16">
+<vertex x="2.921" y="194.945"/>
+<vertex x="2.921" y="66.929"/>
+<vertex x="154.813" y="66.929"/>
+<vertex x="155.067" y="67.183"/>
+<vertex x="155.067" y="193.548"/>
+<vertex x="153.543" y="195.072"/>
+<vertex x="3.048" y="195.072"/>
+</polygon>
 </signal>
 <signal name="12V">
 <contactref element="CANFUSE" pad="P$2"/>
