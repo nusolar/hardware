@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -140,12 +140,19 @@
 </layers>
 <board>
 <plain>
-<wire x1="2.54" y1="74.93" x2="154.102" y2="74.422" width="0" layer="20"/>
-<wire x1="154.102" y1="74.422" x2="153.848" y2="189.347" width="0" layer="20"/>
-<wire x1="153.848" y1="189.347" x2="2.54" y2="189.22" width="0" layer="20"/>
-<wire x1="2.54" y1="189.22" x2="2.54" y2="74.93" width="0" layer="20"/>
-<dimension x1="133.02" y1="74.93" x2="133.02" y2="189.22" x3="152.654" y3="132.075" textsize="1.778" layer="1"/>
-<dimension x1="2.921" y1="74.803" x2="145.415" y2="74.803" x3="74.168" y3="62.23" textsize="1.778" layer="1"/>
+<wire x1="2.7" y1="67" x2="155" y2="67" width="0" layer="20"/>
+<wire x1="155" y1="67" x2="155" y2="195" width="0" layer="20"/>
+<wire x1="155" y1="195" x2="2.7" y2="195" width="0" layer="20"/>
+<wire x1="2.7" y1="195" x2="2.7" y2="67" width="0" layer="20"/>
+<hole x="22" y="191" drill="4"/>
+<hole x="22" y="71.5" drill="4"/>
+<hole x="127" y="71.5" drill="4"/>
+<hole x="127" y="191" drill="4"/>
+<hole x="82.042" y="133.476" drill="4"/>
+<hole x="82.042" y="146.049" drill="4"/>
+<hole x="81.661" y="120.141" drill="4"/>
+<dimension x1="153.543" y1="195.072" x2="3.048" y2="195.072" x3="78.2955" y3="194.691" textsize="1.778" layer="1"/>
+<dimension x1="155.321" y1="194.691" x2="155.321" y2="67.437" x3="162.814" y3="131.064" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="SamacSys_Parts">
@@ -865,8 +872,6 @@ design rules under a new name.</description>
 <wire x1="104.51151875" y1="175.2346" x2="67.5132" y2="175.2346" width="0.4" layer="16"/>
 <wire x1="104.51151875" y1="175.2346" x2="104.6937" y2="175.4175" width="0.4" layer="16"/>
 <wire x1="62.9412" y1="177.6984" x2="62.87" y2="177.8" width="0.4" layer="16"/>
-<wire x1="108.5596" y1="93.3958" x2="108.5596" y2="95.377" width="0.4" layer="1"/>
-<wire x1="108.5596" y1="95.377" x2="108.458" y2="95.377" width="0.4" layer="1"/>
 <wire x1="133.9596" y1="95.377" x2="140.208" y2="95.377" width="0.4" layer="16"/>
 <wire x1="128.8288" y1="90.2462" x2="133.9596" y2="95.377" width="0.4" layer="16"/>
 <wire x1="128.8288" y1="90.2462" x2="121.7168" y2="90.2462" width="0.4" layer="16"/>
@@ -897,34 +902,12 @@ design rules under a new name.</description>
 <wire x1="34.0106" y1="174.9806" x2="36.8554" y2="177.8254" width="0.4" layer="16"/>
 <wire x1="14.605" y1="174.9806" x2="34.0106" y2="174.9806" width="0.4" layer="16"/>
 <wire x1="10.16" y1="133.99" x2="8.9104" y2="133.99" width="0.4" layer="1"/>
-<wire x1="108.458" y1="95.0214" x2="108.458" y2="95.377" width="0.4" layer="16"/>
 <wire x1="39.9846" y1="177.8254" x2="40.01" y2="177.8" width="0.4" layer="16"/>
 <wire x1="14.605" y1="174.9806" x2="14.605" y2="162.941" width="0.4" layer="16"/>
 <wire x1="12.192" y1="174.9806" x2="14.605" y2="174.9806" width="0.4" layer="16"/>
 <contactref element="R1" pad="1"/>
 <contactref element="CAN1" pad="3"/>
 <contactref element="CAN2" pad="3"/>
-<polygon width="0.1524" layer="16">
-<vertex x="2.667" y="75.438"/>
-<vertex x="2.667" y="188.722"/>
-<vertex x="3.048" y="189.103"/>
-<vertex x="153.543" y="189.103"/>
-<vertex x="153.924" y="189.484"/>
-<vertex x="153.924" y="75.184"/>
-<vertex x="154.305" y="74.803"/>
-<vertex x="3.81" y="74.803"/>
-<vertex x="3.302" y="74.803"/>
-</polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="2.667" y="74.803"/>
-<vertex x="2.667" y="188.849"/>
-<vertex x="2.54" y="188.976"/>
-<vertex x="153.416" y="188.976"/>
-<vertex x="154.178" y="189.738"/>
-<vertex x="154.178" y="74.803"/>
-<vertex x="154.051" y="74.676"/>
-<vertex x="2.794" y="74.676"/>
-</polygon>
 <wire x1="104.6937" y1="175.4175" x2="107.2032" y2="177.927" width="0.4" layer="16"/>
 <wire x1="107.2032" y1="177.927" x2="109.098" y2="177.927" width="0.4" layer="16"/>
 <wire x1="121.7168" y1="90.2462" x2="116.718" y2="85.2474" width="0.4" layer="16"/>
@@ -935,6 +918,23 @@ design rules under a new name.</description>
 <wire x1="14.5159" y1="79.5301" x2="8.04504375" y2="79.5301" width="0.4" layer="1"/>
 <wire x1="6.8501" y1="82.41495625" x2="8.89" y2="84.45485625" width="0.4" layer="1"/>
 <wire x1="8.89" y1="84.45485625" x2="8.89" y2="88.27" width="0.4" layer="1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="3.048" y="194.691"/>
+<vertex x="155.321" y="194.691"/>
+<vertex x="155.321" y="67.437"/>
+<vertex x="154.432" y="66.548"/>
+<vertex x="1.778" y="66.548"/>
+<vertex x="3.048" y="67.818"/>
+</polygon>
+<polygon width="0.1524" layer="16">
+<vertex x="2.921" y="194.945"/>
+<vertex x="2.921" y="66.929"/>
+<vertex x="154.813" y="66.929"/>
+<vertex x="155.067" y="67.183"/>
+<vertex x="155.067" y="193.548"/>
+<vertex x="153.543" y="195.072"/>
+<vertex x="3.048" y="195.072"/>
+</polygon>
 </signal>
 <signal name="12V">
 <contactref element="CANFUSE" pad="P$2"/>
@@ -1213,8 +1213,9 @@ design rules under a new name.</description>
 <contactref element="PS4" pad="8"/>
 <contactref element="U$5" pad="P$2"/>
 <contactref element="BUCKPROTECTDIODE" pad="A"/>
-<wire x1="127.508" y1="167.767" x2="135.128" y2="167.767" width="0.4" layer="1"/>
-<wire x1="120.9294" y1="161.1884" x2="127.508" y2="167.767" width="0.4" layer="1"/>
+<wire x1="134.747" y1="168.148" x2="135.128" y2="167.767" width="0.4" layer="1"/>
+<wire x1="134.747" y1="168.148" x2="127.889" y2="168.148" width="0.4" layer="1"/>
+<wire x1="120.9294" y1="161.1884" x2="127.889" y2="168.148" width="0.4" layer="1"/>
 <wire x1="114.6302" y1="161.1884" x2="120.9294" y2="161.1884" width="0.4" layer="1"/>
 <wire x1="112.3696" y1="158.9278" x2="114.6302" y2="161.1884" width="0.4" layer="1"/>
 <wire x1="112.3696" y1="158.9278" x2="112.268" y2="158.877" width="0.4" layer="1"/>
