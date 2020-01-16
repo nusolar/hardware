@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-01-10T22:13:51Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "DCDCFinalBoardLayout"
+        },
+        "Owner": "Charlie Costakis <charlescostakis2020@u.northwestern.edu>",
+        "Size": {
+            "X": 127.94,
+            "Y": 114.29
+        }
+    }
+}

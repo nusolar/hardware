@@ -148,8 +148,6 @@
 <wire x1="36.5" y1="19.05" x2="36.5" y2="80" width="0" layer="20"/>
 <wire x1="36.5" y1="80" x2="0" y2="80" width="0" layer="20"/>
 <wire x1="0" y1="80" x2="0" y2="19.05" width="0" layer="20"/>
-<dimension x1="0" y1="80" x2="0" y2="19.05" x3="-3.81" y3="49.525" textsize="1.778" layer="1"/>
-<dimension x1="0" y1="19.05" x2="36.5" y2="19.05" x3="18.25" y3="15.24" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="SamacSys_Parts">
