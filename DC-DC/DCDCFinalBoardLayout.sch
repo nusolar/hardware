@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10,6 +10,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -330,71 +344,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connects>
 <connect gate="F1" pin="1" pad="P$1"/>
 <connect gate="F1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="diode">
-<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
-Based on the following sources:
-&lt;ul&gt;
-&lt;li&gt;Motorola : www.onsemi.com
-&lt;li&gt;Fairchild : www.fairchildsemi.com
-&lt;li&gt;Philips : www.semiconductors.com
-&lt;li&gt;Vishay : www.vishay.de
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SMC">
-<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
-<wire x1="-3.5606" y1="3.105" x2="3.5606" y2="3.105" width="0.1016" layer="21"/>
-<wire x1="-3.5606" y1="-3.105" x2="3.5606" y2="-3.105" width="0.1016" layer="21"/>
-<wire x1="-3.5606" y1="-3.105" x2="-3.5606" y2="3.105" width="0.1016" layer="51"/>
-<wire x1="3.5606" y1="-3.105" x2="3.5606" y2="3.105" width="0.1016" layer="51"/>
-<wire x1="0.543" y1="1" x2="-0.83" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.83" y1="0" x2="0.543" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.543" y1="-1" x2="0.543" y2="1" width="0.2032" layer="21"/>
-<smd name="C" x="-3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
-<smd name="A" x="3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
-<text x="-3.459" y="3.359" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.459" y="-4.629" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-4.094" y1="-1.0922" x2="-3.5606" y2="1.0922" layer="51"/>
-<rectangle x1="3.5606" y1="-1.0922" x2="4.094" y2="1.0922" layer="51"/>
-<rectangle x1="-2.1" y1="-3.1" x2="-0.85" y2="3.1" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SCHOTTKY">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SL44HE3">
-<gates>
-<gate name="SL44HE3" symbol="SCHOTTKY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SMC">
-<connects>
-<connect gate="SL44HE3" pin="A" pad="A"/>
-<connect gate="SL44HE3" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1468,6 +1417,121 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 </deviceset>
 </devicesets>
 </library>
+<library name="transistor-fet" urn="urn:adsk.eagle:library:396">
+<description>&lt;b&gt;Field Effect Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
+&lt;p&gt;
+Symbols changed according to IEC617&lt;p&gt; 
+All types, packages and assignment to symbols and pins checked&lt;p&gt;
+Package outlines partly checked&lt;p&gt;
+&lt;p&gt;
+JFET = junction FET&lt;p&gt;
+IGBT-x = insulated gate bipolar transistor&lt;p&gt;
+x=N: NPN; x=P: PNP&lt;p&gt;
+IGFET-mc-nnn; (IGFET=insulated gate field effect transistor)&lt;P&gt;
+m=D: depletion mode (Verdr&amp;auml;ngungstyp)&lt;p&gt;
+m=E: enhancement mode (Anreicherungstyp)&lt;p&gt;
+c: N=N-channel; P=P-Channel&lt;p&gt;
+GDSB: gate, drain, source, bulk&lt;p&gt;
+&lt;p&gt;
+by R. Vogg  15.March.2002</description>
+<packages>
+<package name="TO220" urn="urn:adsk.eagle:footprint:28453/1" library_version="5">
+<description>&lt;b&gt;TO 220 horizontal&lt;/b&gt;</description>
+<wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.127" layer="21"/>
+<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.127" layer="21"/>
+<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.127" layer="21"/>
+<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.127" layer="21"/>
+<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.127" layer="21"/>
+<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.127" layer="21"/>
+<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.127" layer="21"/>
+<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.127" layer="21"/>
+<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.127" layer="21"/>
+<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
+<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
+<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
+<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
+<circle x="0" y="11.176" radius="1.8034" width="0.127" layer="21"/>
+<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
+<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
+<pad name="1" x="-2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
+<text x="-3.81" y="5.207" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.937" y="2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.445" y="7.874" size="0.9906" layer="21" ratio="12">A17,5mm</text>
+<text x="-3.175" y="0" size="1.27" layer="51" ratio="10">1</text>
+<text x="-0.635" y="0" size="1.27" layer="51" ratio="10">2</text>
+<text x="1.905" y="0" size="1.27" layer="51" ratio="10">3</text>
+<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-4.064" layer="21"/>
+<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-4.064" layer="21"/>
+<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-4.064" layer="21"/>
+<rectangle x1="-3.175" y1="-4.064" x2="-1.905" y2="-1.27" layer="21"/>
+<rectangle x1="-0.635" y1="-4.064" x2="0.635" y2="-1.27" layer="21"/>
+<rectangle x1="1.905" y1="-4.064" x2="3.175" y2="-1.27" layer="21"/>
+<rectangle x1="-2.921" y1="-6.604" x2="-2.159" y2="-4.699" layer="51"/>
+<rectangle x1="-0.381" y1="-6.604" x2="0.381" y2="-4.699" layer="51"/>
+<rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
+<hole x="0" y="11.176" drill="3.302"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="TO220" urn="urn:adsk.eagle:package:28520/1" type="box" library_version="5">
+<description>TO 220 horizontal</description>
+<packageinstances>
+<packageinstance name="TO220"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="IGFET-EN-GDS" urn="urn:adsk.eagle:symbol:28452/1" library_version="5">
+<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="3.683" x2="0" y2="1.397" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.397" x2="0" y2="-3.683" width="0.254" layer="94"/>
+<wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
+<text x="-11.43" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<pin name="D" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="S" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BUZ10" urn="urn:adsk.eagle:component:28581/2" prefix="Q" library_version="5">
+<description>&lt;b&gt;N-Channel Enhancement MOSFET&lt;/b&gt; 50V; 20A; 0,080Ohm</description>
+<gates>
+<gate name="G$1" symbol="IGFET-EN-GDS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO220">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28520/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1484,7 +1548,6 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="RFFUSE" library="f-lf-omniblok-s" deviceset="SMD-MICRO-FUSE" device="-BLOCK" value="0.4 A"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="RELAYPROTECTDIODE" library="diode" deviceset="SL44HE3" device=""/>
 <part name="BMSOUTFUSE" library="f-lf-omniblok-s" deviceset="SMD-MICRO-FUSE" device="-BLOCK" value="1.2A"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$3" library="NUSOLAR_Custom" deviceset="4700PF" device=""/>
@@ -1526,16 +1589,16 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <part name="PS3" library="SamacSys_Parts" deviceset="IRQ-12_8.3-T110N-C" device=""/>
 <part name="PS4" library="SamacSys_Parts" deviceset="IRQ-12_8.3-T110N-C" device=""/>
 <part name="K1" library="SamacSys_Parts" deviceset="ALZ12B12W" device=""/>
-<part name="BUCKPROTECTDIODE" library="diode" deviceset="SL44HE3" device=""/>
 <part name="HIGHPOWERINPUT" library="SamacSys_Parts" deviceset="15-31-1026" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA3_P" device="" value="DCDC_combined"/>
 <part name="AUX-IN" library="SamacSys_Parts" deviceset="15-31-1026" device=""/>
 <part name="BMSINPUT" library="SamacSys_Parts" deviceset="15-31-1026" device=""/>
-<part name="VARBUCKPROTECTDIODE" library="diode" deviceset="SL44HE3" device=""/>
 <part name="R1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:13300/1" value="0"/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="CAN1" library="SamacSys_Parts" deviceset="1200845179" device=""/>
 <part name="CAN2" library="SamacSys_Parts" deviceset="1200845179" device=""/>
+<part name="Q2" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="BUZ10" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
+<part name="Q1" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="BUZ10" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -1565,10 +1628,6 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 </instance>
 <instance part="GND6" gate="1" x="-106.68" y="91.44" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-104.14" y="88.9" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="RELAYPROTECTDIODE" gate="SL44HE3" x="-193.04" y="81.28" smashed="yes">
-<attribute name="NAME" x="-195.326" y="83.185" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-195.326" y="77.851" size="1.778" layer="96"/>
 </instance>
 <instance part="BMSOUTFUSE" gate="F1" x="-152.4" y="66.04" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-148.59" y="67.437" size="1.778" layer="95" rot="MR0"/>
@@ -1721,10 +1780,6 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <attribute name="NAME" x="-245.11" y="78.74" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-245.11" y="76.2" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="BUCKPROTECTDIODE" gate="SL44HE3" x="-170.18" y="137.16" smashed="yes">
-<attribute name="NAME" x="-190.246" y="141.605" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-172.466" y="133.731" size="1.778" layer="96"/>
-</instance>
 <instance part="HIGHPOWERINPUT" gate="G$1" x="-274.32" y="114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="-281.94" y="130.81" size="1.778" layer="95" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="-279.4" y="130.81" size="1.778" layer="96" rot="R90" align="center-left"/>
@@ -1743,10 +1798,6 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <attribute name="NAME" x="-218.44" y="72.39" size="1.778" layer="95" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="-208.28" y="72.39" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="VARBUCKPROTECTDIODE" gate="SL44HE3" x="-190.5" y="-40.64" smashed="yes">
-<attribute name="NAME" x="-210.566" y="-36.195" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-192.786" y="-44.069" size="1.778" layer="96"/>
-</instance>
 <instance part="R1" gate="G$1" x="-114.3" y="129.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="-115.7986" y="125.73" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-110.998" y="125.73" size="1.778" layer="96" rot="R90"/>
@@ -1761,6 +1812,14 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <instance part="CAN2" gate="G$1" x="-119.38" y="160.02" smashed="yes" rot="R180">
 <attribute name="NAME" x="-135.89" y="152.4" size="1.778" layer="95" rot="R180" align="center-left"/>
 <attribute name="VALUE" x="-135.89" y="154.94" size="1.778" layer="96" rot="R180" align="center-left"/>
+</instance>
+<instance part="Q2" gate="G$1" x="-180.34" y="104.14" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-180.34" y="115.57" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="-177.8" y="115.57" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="Q1" gate="G$1" x="-193.04" y="-50.8" smashed="yes">
+<attribute name="VALUE" x="-204.47" y="-50.8" size="1.778" layer="96"/>
+<attribute name="NAME" x="-204.47" y="-48.26" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -1914,13 +1973,8 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <pinref part="RFFUSE" gate="F1" pin="2"/>
 <wire x1="-162.56" y1="96.52" x2="-154.94" y2="96.52" width="0.1524" layer="91"/>
 <junction x="-162.56" y="96.52"/>
-<wire x1="-170.18" y1="81.28" x2="-170.18" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="RELAYPROTECTDIODE" gate="SL44HE3" pin="C"/>
-<wire x1="-190.5" y1="81.28" x2="-170.18" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-170.18" y1="116.84" x2="-162.56" y2="116.84" width="0.1524" layer="91"/>
 <junction x="-162.56" y="116.84"/>
-<wire x1="-167.64" y1="137.16" x2="-162.56" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="BUCKPROTECTDIODE" gate="SL44HE3" pin="C"/>
 <pinref part="MP3FUSE" gate="F1" pin="2"/>
 <wire x1="-162.56" y1="-12.7" x2="-142.24" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="MP2FUSE" gate="F1" pin="2"/>
@@ -1940,6 +1994,9 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <wire x1="-162.56" y1="66.04" x2="-157.48" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-162.56" y="66.04"/>
 <junction x="-162.56" y="38.1"/>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="-177.8" y1="99.06" x2="-170.18" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-170.18" y1="99.06" x2="-170.18" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="FANFUSE" gate="F1" pin="2"/>
@@ -1947,15 +2004,17 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <wire x1="-177.8" y1="-40.64" x2="-182.88" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="-182.88" y1="-40.64" x2="-182.88" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="-182.88" y="-40.64"/>
-<wire x1="-182.88" y1="-40.64" x2="-182.88" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="-182.88" y1="-40.64" x2="-182.88" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="HORNFUSE" gate="F1" pin="2"/>
+<wire x1="-182.88" y1="-48.26" x2="-182.88" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="-182.88" y1="-81.28" x2="-175.26" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="VARMPFUSE" gate="F1" pin="2"/>
 <wire x1="-182.88" y1="-104.14" x2="-175.26" y2="-104.14" width="0.1524" layer="91"/>
 <wire x1="-182.88" y1="-81.28" x2="-182.88" y2="-104.14" width="0.1524" layer="91"/>
 <junction x="-182.88" y="-81.28"/>
-<wire x1="-187.96" y1="-40.64" x2="-182.88" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="VARBUCKPROTECTDIODE" gate="SL44HE3" pin="C"/>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="-187.96" y1="-48.26" x2="-182.88" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-182.88" y="-48.26"/>
 </segment>
 </net>
 <net name="IN+" class="0">
@@ -1997,14 +2056,16 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <wire x1="-226.06" y1="81.28" x2="-226.06" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="BMSINPUT" gate="G$1" pin="2"/>
 <wire x1="-226.06" y1="88.9" x2="-213.36" y2="88.9" width="0.1524" layer="91"/>
+<junction x="-213.36" y="88.9"/>
 </segment>
 <segment>
 <label x="-193.04" y="60.96" size="1.778" layer="95" rot="R180"/>
-<pinref part="RELAYPROTECTDIODE" gate="SL44HE3" pin="A"/>
-<wire x1="-200.66" y1="81.28" x2="-195.58" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="K1" gate="G$1" pin="NC_2"/>
-<wire x1="-200.66" y1="81.28" x2="-200.66" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-200.66" y1="93.98" x2="-200.66" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-200.66" y1="66.04" x2="-241.3" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-200.66" y1="93.98" x2="-182.88" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<wire x1="-182.88" y1="93.98" x2="-182.88" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -2147,11 +2208,10 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <wire x1="-195.58" y1="129.54" x2="-187.96" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="-187.96" y1="129.54" x2="-187.96" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="-187.96" y1="124.46" x2="-187.96" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-187.96" y1="124.46" x2="-182.88" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<wire x1="-182.88" y1="124.46" x2="-182.88" y2="109.22" width="0.1524" layer="91"/>
 <junction x="-187.96" y="124.46"/>
-<wire x1="-177.8" y1="124.46" x2="-187.96" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="-177.8" y1="124.46" x2="-177.8" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="-177.8" y1="137.16" x2="-172.72" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="BUCKPROTECTDIODE" gate="SL44HE3" pin="A"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -2165,14 +2225,11 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <pinref part="U$8" gate="G$1" pin="2"/>
 <wire x1="-203.2" y1="-48.26" x2="-215.9" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="-203.2" y="-48.26"/>
-<wire x1="-198.12" y1="-40.64" x2="-193.04" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="-198.12" y1="-53.34" x2="-198.12" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="-198.12" y="-53.34"/>
 <wire x1="-198.12" y1="-53.34" x2="-203.2" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-203.2" y1="-53.34" x2="-203.2" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="-203.2" y1="-53.34" x2="-203.2" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="-203.2" y="-53.34"/>
-<pinref part="VARBUCKPROTECTDIODE" gate="SL44HE3" pin="A"/>
+<pinref part="Q1" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="N$17" class="0">
