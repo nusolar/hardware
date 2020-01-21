@@ -2014,6 +2014,7 @@ by R. Vogg  15.March.2002</description>
 <junction x="-182.88" y="-81.28"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="-187.96" y1="-48.26" x2="-182.88" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-182.88" y="-48.26"/>
 </segment>
 </net>
 <net name="IN+" class="0">
@@ -2055,6 +2056,7 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-226.06" y1="81.28" x2="-226.06" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="BMSINPUT" gate="G$1" pin="2"/>
 <wire x1="-226.06" y1="88.9" x2="-213.36" y2="88.9" width="0.1524" layer="91"/>
+<junction x="-213.36" y="88.9"/>
 </segment>
 <segment>
 <label x="-193.04" y="60.96" size="1.778" layer="95" rot="R180"/>
@@ -2209,6 +2211,7 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-187.96" y1="124.46" x2="-182.88" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="G"/>
 <wire x1="-182.88" y1="124.46" x2="-182.88" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-187.96" y="124.46"/>
 </segment>
 </net>
 <net name="N$13" class="0">

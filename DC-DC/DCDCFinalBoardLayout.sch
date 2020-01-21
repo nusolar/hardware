@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1599,6 +1599,7 @@ by R. Vogg  15.March.2002</description>
 <part name="CAN2" library="SamacSys_Parts" deviceset="1200845179" device=""/>
 <part name="Q2" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="BUZ10" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
 <part name="Q1" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="BUZ10" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
+<part name="Q3" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="BUZ10" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -1821,6 +1822,10 @@ by R. Vogg  15.March.2002</description>
 <attribute name="VALUE" x="-204.47" y="-50.8" size="1.778" layer="96"/>
 <attribute name="NAME" x="-204.47" y="-48.26" size="1.778" layer="95"/>
 </instance>
+<instance part="Q3" gate="G$1" x="-180.34" y="83.82" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-180.34" y="95.25" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="-177.8" y="95.25" size="1.778" layer="95" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1968,13 +1973,10 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-157.48" y1="137.16" x2="-162.56" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="137.16" x2="-162.56" y2="147.32" width="0.1524" layer="91"/>
 <junction x="-162.56" y="137.16"/>
-<wire x1="-162.56" y1="137.16" x2="-162.56" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="116.84" x2="-162.56" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="137.16" x2="-162.56" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="RFFUSE" gate="F1" pin="2"/>
 <wire x1="-162.56" y1="96.52" x2="-154.94" y2="96.52" width="0.1524" layer="91"/>
 <junction x="-162.56" y="96.52"/>
-<wire x1="-170.18" y1="116.84" x2="-162.56" y2="116.84" width="0.1524" layer="91"/>
-<junction x="-162.56" y="116.84"/>
 <pinref part="MP3FUSE" gate="F1" pin="2"/>
 <wire x1="-162.56" y1="-12.7" x2="-142.24" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="MP2FUSE" gate="F1" pin="2"/>
@@ -1990,13 +1992,17 @@ by R. Vogg  15.March.2002</description>
 <pinref part="BCKUPCAMFUSE" gate="F1" pin="2"/>
 <wire x1="-162.56" y1="38.1" x2="-162.56" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="BMSOUTFUSE" gate="F1" pin="2"/>
-<wire x1="-162.56" y1="66.04" x2="-162.56" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="66.04" x2="-162.56" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="78.74" x2="-162.56" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="66.04" x2="-157.48" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-162.56" y="66.04"/>
 <junction x="-162.56" y="38.1"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
-<wire x1="-177.8" y1="99.06" x2="-170.18" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-170.18" y1="99.06" x2="-170.18" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="99.06" x2="-177.8" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="96.52" x2="-162.56" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="D"/>
+<wire x1="-177.8" y1="78.74" x2="-162.56" y2="78.74" width="0.1524" layer="91"/>
+<junction x="-162.56" y="78.74"/>
 </segment>
 <segment>
 <pinref part="FANFUSE" gate="F1" pin="2"/>
@@ -2061,11 +2067,15 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <label x="-193.04" y="60.96" size="1.778" layer="95" rot="R180"/>
 <pinref part="K1" gate="G$1" pin="NC_2"/>
-<wire x1="-200.66" y1="93.98" x2="-200.66" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-200.66" y1="66.04" x2="-241.3" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-200.66" y1="93.98" x2="-182.88" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="S"/>
-<wire x1="-182.88" y1="93.98" x2="-182.88" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="G"/>
+<wire x1="-200.66" y1="66.04" x2="-200.66" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-200.66" y1="88.9" x2="-187.96" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-187.96" y1="88.9" x2="-182.88" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-187.96" y1="88.9" x2="-187.96" y2="78.74" width="0.1524" layer="91"/>
+<junction x="-187.96" y="88.9"/>
+<pinref part="Q3" gate="G$1" pin="S"/>
+<wire x1="-187.96" y1="78.74" x2="-182.88" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -2212,6 +2222,11 @@ by R. Vogg  15.March.2002</description>
 <pinref part="Q2" gate="G$1" pin="G"/>
 <wire x1="-182.88" y1="124.46" x2="-182.88" y2="109.22" width="0.1524" layer="91"/>
 <junction x="-187.96" y="124.46"/>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<wire x1="-182.88" y1="99.06" x2="-187.96" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-187.96" y1="99.06" x2="-187.96" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-187.96" y1="109.22" x2="-182.88" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-182.88" y="109.22"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -2230,6 +2245,11 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-203.2" y1="-53.34" x2="-203.2" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="-203.2" y="-53.34"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<wire x1="-187.96" y1="-53.34" x2="-187.96" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-187.96" y1="-58.42" x2="-198.12" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-198.12" y1="-58.42" x2="-198.12" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="-198.12" y="-53.34"/>
 </segment>
 </net>
 <net name="N$17" class="0">
