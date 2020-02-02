@@ -9774,6 +9774,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="CAN_CONN_OUT" library="SamacSys_Parts" deviceset="1200845179" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$10" library="microbuilder" deviceset="VIN" device=""/>
@@ -9859,6 +9860,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <sheets>
 <sheet>
 <plain>
+<text x="198.12" y="157.48" size="1.778" layer="114">CAN Bus Module V1.0</text>
 <text x="424.18" y="66.04" size="1.778" layer="91">Adafruit Addalogger side/LCD Board Side</text>
 <text x="180.34" y="-2.54" size="1.778" layer="91">RT</text>
 <text x="180.34" y="0" size="1.778" layer="91">LT</text>
@@ -10027,6 +10029,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </instance>
 <instance part="GND9" gate="1" x="467.36" y="96.52" smashed="yes">
 <attribute name="VALUE" x="464.82" y="93.98" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY12" gate="G$1" x="302.26" y="210.82" smashed="yes">
+<attribute name="VALUE" x="301.244" y="214.376" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY13" gate="G$1" x="538.48" y="124.46" smashed="yes">
 <attribute name="VALUE" x="537.464" y="128.016" size="1.778" layer="96"/>
@@ -10338,18 +10343,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <attribute name="NAME" x="107.7214" y="39.37" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="112.522" y="41.91" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IC1" gate="P" x="241.3" y="25.4" smashed="yes">
-<attribute name="NAME" x="240.665" y="24.765" size="1.778" layer="95"/>
-</instance>
-<instance part="IC2" gate="P" x="289.56" y="22.86" smashed="yes">
-<attribute name="NAME" x="288.925" y="22.225" size="1.778" layer="95"/>
-</instance>
-<instance part="IC3" gate="P" x="289.56" y="-30.48" smashed="yes">
-<attribute name="NAME" x="288.925" y="-31.115" size="1.778" layer="95"/>
-</instance>
-<instance part="IC7" gate="P" x="241.3" y="-33.02" smashed="yes">
-<attribute name="NAME" x="240.665" y="-33.655" size="1.778" layer="95"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -10548,45 +10541,15 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <junction x="459.74" y="119.38"/>
 </segment>
 <segment>
+<pinref part="SUPPLY12" gate="G$1" pin="12V"/>
+<wire x1="302.26" y1="208.28" x2="302.26" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="SUPPLY13" gate="G$1" pin="12V"/>
 <pinref part="CAN_CONN_OUT" gate="G$1" pin="1"/>
 <wire x1="546.1" y1="116.84" x2="538.48" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="538.48" y1="116.84" x2="538.48" y2="124.46" width="0.1524" layer="91"/>
 <label x="541.02" y="116.84" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="HD_LED" gate="G$1" pin="2"/>
-<pinref part="HD_LED1" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="-10.16" x2="134.62" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="STRB_LED" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="-10.16" x2="124.46" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="-10.16" x2="93.98" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="-10.16" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="48.26" x2="307.34" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="LT_LED" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="48.26" x2="317.5" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="48.26" x2="317.5" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="48.26" x2="332.74" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="48.26" x2="332.74" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="RT_LED" gate="G$1" pin="2"/>
-<wire x1="317.5" y1="-7.62" x2="327.66" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="BRK_LED" gate="G$1" pin="2"/>
-<wire x1="327.66" y1="-7.62" x2="332.74" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="50.8" x2="154.94" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="50.8" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="60.96" x2="208.28" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="60.96" x2="208.28" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="RT_LED1" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="-7.62" x2="317.5" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="RT_LED2" gate="G$1" pin="2"/>
-<pinref part="LT_LED1" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="45.72" x2="307.34" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="LT_LED2" gate="G$1" pin="2"/>
-<wire x1="317.5" y1="48.26" x2="327.66" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="48.26" x2="327.66" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="50.8" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
-<junction x="134.62" y="50.8"/>
-<label x="172.72" y="60.96" size="2.54" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -11655,6 +11618,41 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="IC7" gate="A" pin="O"/>
 <pinref part="IC3" gate="A" pin="I1"/>
 <wire x1="254" y1="-33.02" x2="276.86" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="HD_LED" gate="G$1" pin="2"/>
+<pinref part="HD_LED1" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="-10.16" x2="134.62" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="STRB_LED" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="-10.16" x2="124.46" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-10.16" x2="93.98" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-10.16" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="48.26" x2="307.34" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="LT_LED" gate="G$1" pin="2"/>
+<wire x1="307.34" y1="48.26" x2="317.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="48.26" x2="317.5" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="48.26" x2="332.74" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="48.26" x2="332.74" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="RT_LED" gate="G$1" pin="2"/>
+<wire x1="317.5" y1="-7.62" x2="327.66" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="BRK_LED" gate="G$1" pin="2"/>
+<wire x1="327.66" y1="-7.62" x2="332.74" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="50.8" x2="154.94" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="50.8" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="60.96" x2="208.28" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="60.96" x2="208.28" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="RT_LED1" gate="G$1" pin="2"/>
+<wire x1="307.34" y1="-7.62" x2="317.5" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="RT_LED2" gate="G$1" pin="2"/>
+<pinref part="LT_LED1" gate="G$1" pin="2"/>
+<wire x1="307.34" y1="45.72" x2="307.34" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="LT_LED2" gate="G$1" pin="2"/>
+<wire x1="317.5" y1="48.26" x2="327.66" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="48.26" x2="327.66" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="50.8" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
+<junction x="134.62" y="50.8"/>
 </segment>
 </net>
 <net name="N$31" class="0">
