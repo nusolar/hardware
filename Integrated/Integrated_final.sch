@@ -7080,6 +7080,97 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </deviceset>
 </devicesets>
 </library>
+<library name="con-molex" urn="urn:adsk.eagle:library:165">
+<description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="5566-4" urn="urn:adsk.eagle:footprint:8078208/1" library_version="5">
+<description>&lt;b&gt;Mini-Fit Jr.™ Vertical Header, 4.20mm Pitch, Dual Row, 4 Circuits, without Snap-in Plastic Peg PCB Lock, Tin, Natural&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/039281043_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
+<wire x1="-4.7" y1="4.5" x2="4.7" y2="4.5" width="0.254" layer="21"/>
+<wire x1="4.7" y1="4.5" x2="4.7" y2="-2.2" width="0.254" layer="21"/>
+<wire x1="4.7" y1="-3.3" x2="4.7" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="4.7" y1="-4.9" x2="-4.7" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="-4.7" y1="-4.9" x2="-4.7" y2="4.5" width="0.254" layer="21"/>
+<wire x1="-8.2" y1="3.2" x2="-5.4" y2="3.2" width="0.254" layer="21" curve="-114.529547"/>
+<wire x1="-8.2" y1="1.4" x2="-5.4" y2="1.4" width="0.254" layer="21" curve="114.529547"/>
+<wire x1="-8.2" y1="3.2" x2="-8.2" y2="1.4" width="0.254" layer="21"/>
+<wire x1="-5.5" y1="3.3" x2="-4.8" y2="3.3" width="0.254" layer="21"/>
+<wire x1="-5.5" y1="1.3" x2="-4.8" y2="1.3" width="0.254" layer="21"/>
+<wire x1="5.4" y1="1.4" x2="8.2" y2="1.4" width="0.254" layer="21" curve="114.529547"/>
+<wire x1="5.4" y1="3.2" x2="8.2" y2="3.2" width="0.254" layer="21" curve="-114.529547"/>
+<wire x1="8.2" y1="1.4" x2="8.2" y2="3.2" width="0.254" layer="21"/>
+<wire x1="5.5" y1="1.3" x2="4.8" y2="1.3" width="0.254" layer="21"/>
+<wire x1="5.5" y1="3.3" x2="4.8" y2="3.3" width="0.254" layer="21"/>
+<wire x1="4.7" y1="-2.2" x2="4.7" y2="-3.3" width="0.254" layer="21" curve="-180"/>
+<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
+<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
+<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
+<pad name="1" x="2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="2" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="4" x="-2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="3" x="2.1" y="2.75" drill="1.4" shape="square"/>
+<text x="-1.27" y="-6.985" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="6.985" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="6.8" y="2.29" drill="3"/>
+<hole x="-6.8" y="2.29" drill="3"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="5566-4" urn="urn:adsk.eagle:package:8078582/1" type="box" library_version="5">
+<description>&lt;b&gt;Mini-Fit Jr.™ Vertical Header, 4.20mm Pitch, Dual Row, 4 Circuits, without Snap-in Plastic Peg PCB Lock, Tin, Natural&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/039281043_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
+<packageinstances>
+<packageinstance name="5566-4"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="MV" urn="urn:adsk.eagle:symbol:6783/2" library_version="5">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="M" urn="urn:adsk.eagle:symbol:6785/2" library_version="5">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="5566-4" urn="urn:adsk.eagle:component:8079093/3" prefix="X" library_version="5">
+<description>&lt;b&gt;Mini FIT connector 4 pol&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="5.08" addlevel="always"/>
+<gate name="-2" symbol="M" x="0" y="2.54" addlevel="always"/>
+<gate name="-3" symbol="M" x="0" y="0" addlevel="always"/>
+<gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="5566-4">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8078582/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7222,6 +7313,8 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY35" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
+<part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="5566-4" device="" package3d_urn="urn:adsk.eagle:package:8078582/1"/>
+<part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="5566-4" device="" package3d_urn="urn:adsk.eagle:package:8078582/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -7734,6 +7827,32 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <instance part="+3V2" gate="G$1" x="419.1" y="5.08" smashed="yes">
 <attribute name="VALUE" x="416.56" y="0" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="X1" gate="-1" x="647.7" y="22.86" smashed="yes">
+<attribute name="NAME" x="650.24" y="22.098" size="1.524" layer="95"/>
+<attribute name="VALUE" x="646.938" y="24.257" size="1.778" layer="96"/>
+</instance>
+<instance part="X1" gate="-2" x="647.7" y="20.32" smashed="yes">
+<attribute name="NAME" x="650.24" y="19.558" size="1.524" layer="95"/>
+</instance>
+<instance part="X1" gate="-3" x="647.7" y="17.78" smashed="yes">
+<attribute name="NAME" x="650.24" y="17.018" size="1.524" layer="95"/>
+</instance>
+<instance part="X1" gate="-4" x="647.7" y="15.24" smashed="yes">
+<attribute name="NAME" x="650.24" y="14.478" size="1.524" layer="95"/>
+</instance>
+<instance part="X2" gate="-1" x="647.7" y="7.62" smashed="yes">
+<attribute name="NAME" x="650.24" y="6.858" size="1.524" layer="95"/>
+<attribute name="VALUE" x="646.938" y="9.017" size="1.778" layer="96"/>
+</instance>
+<instance part="X2" gate="-2" x="647.7" y="5.08" smashed="yes">
+<attribute name="NAME" x="650.24" y="4.318" size="1.524" layer="95"/>
+</instance>
+<instance part="X2" gate="-3" x="647.7" y="2.54" smashed="yes">
+<attribute name="NAME" x="650.24" y="1.778" size="1.524" layer="95"/>
+</instance>
+<instance part="X2" gate="-4" x="647.7" y="0" smashed="yes">
+<attribute name="NAME" x="650.24" y="-0.762" size="1.524" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8013,6 +8132,11 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="599.44" y1="-25.4" x2="614.68" y2="-25.4" width="0.1524" layer="91"/>
 <label x="599.44" y="-25.4" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X2" gate="-4" pin="S"/>
+<wire x1="645.16" y1="0" x2="640.08" y2="0" width="0.1524" layer="91"/>
+<label x="640.08" y="0" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CAN_H" class="0">
 <segment>
@@ -8162,12 +8286,22 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="JP1" gate="A" pin="8"/>
 <label x="599.44" y="-10.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X2" gate="-3" pin="S"/>
+<wire x1="645.16" y1="2.54" x2="640.08" y2="2.54" width="0.1524" layer="91"/>
+<label x="640.08" y="2.54" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="A3" class="0">
 <segment>
 <wire x1="599.44" y1="-7.62" x2="614.68" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="9"/>
 <label x="599.44" y="-7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X2" gate="-2" pin="S"/>
+<wire x1="645.16" y1="5.08" x2="640.08" y2="5.08" width="0.1524" layer="91"/>
+<label x="640.08" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RGN_BRK" class="0">
@@ -8207,6 +8341,11 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="JP1" gate="A" pin="12"/>
 <label x="599.44" y="0" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X2" gate="-1" pin="S"/>
+<wire x1="645.16" y1="7.62" x2="640.08" y2="7.62" width="0.1524" layer="91"/>
+<label x="640.08" y="7.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="!RESET" class="0">
 <segment>
@@ -8221,12 +8360,22 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <label x="568.96" y="58.42" size="1.778" layer="95"/>
 <pinref part="JP3" gate="G$1" pin="6"/>
 </segment>
+<segment>
+<pinref part="X1" gate="-3" pin="S"/>
+<wire x1="645.16" y1="17.78" x2="640.08" y2="17.78" width="0.1524" layer="91"/>
+<label x="640.08" y="17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D12" class="0">
 <segment>
 <wire x1="568.96" y1="60.96" x2="589.28" y2="60.96" width="0.1524" layer="91"/>
 <label x="568.96" y="60.96" size="1.778" layer="95"/>
 <pinref part="JP3" gate="G$1" pin="5"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-2" pin="S"/>
+<wire x1="645.16" y1="20.32" x2="640.08" y2="20.32" width="0.1524" layer="91"/>
+<label x="640.08" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -8248,6 +8397,11 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="589.28" y1="63.5" x2="568.96" y2="63.5" width="0.1524" layer="91"/>
 <label x="568.96" y="63.5" size="1.778" layer="95"/>
 <pinref part="JP3" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="645.16" y1="22.86" x2="640.08" y2="22.86" width="0.1524" layer="91"/>
+<label x="640.08" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -8300,6 +8454,11 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="568.96" y1="55.88" x2="589.28" y2="55.88" width="0.1524" layer="91"/>
 <label x="568.96" y="55.88" size="1.778" layer="95"/>
 <pinref part="JP3" gate="G$1" pin="7"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-4" pin="S"/>
+<wire x1="645.16" y1="15.24" x2="640.08" y2="15.24" width="0.1524" layer="91"/>
+<label x="640.08" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EN" class="0">
