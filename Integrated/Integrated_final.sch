@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7219,11 +7219,9 @@ Source: http://www.molex.com</description>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="CAN_CONN_IN" library="SamacSys_Parts" deviceset="1200845179" device=""/>
-<part name="F2" library="f-lf-omniblok-s" deviceset="SMD-MICRO-FUSE" device="-BLOCK"/>
 <part name="CAN_CONN_OUT" library="SamacSys_Parts" deviceset="1200845179" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$10" library="microbuilder" deviceset="VIN" device=""/>
 <part name="U$11" library="microbuilder" deviceset="3.3V" device=""/>
@@ -7315,6 +7313,9 @@ Source: http://www.molex.com</description>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="5566-4" device="" package3d_urn="urn:adsk.eagle:package:8078582/1"/>
 <part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="5566-4" device="" package3d_urn="urn:adsk.eagle:package:8078582/1"/>
+<part name="F1" library="f-lf-omniblok-s" deviceset="SMD-MICRO-FUSE" device="-BLOCK"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R0805" value="0"/>
+<part name="R15" library="rcl" deviceset="R-US_" device="R0805" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -7464,25 +7465,18 @@ Source: http://www.molex.com</description>
 <attribute name="NAME" x="468.63" y="119.38" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="488.95" y="119.38" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="F2" gate="F1" x="508" y="114.3" smashed="yes">
-<attribute name="NAME" x="504.19" y="115.697" size="1.778" layer="95"/>
-<attribute name="VALUE" x="504.19" y="111.379" size="1.778" layer="96"/>
-</instance>
 <instance part="CAN_CONN_OUT" gate="G$1" x="546.1" y="116.84" smashed="yes">
 <attribute name="NAME" x="552.45" y="127" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="562.61" y="121.92" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="SUPPLY9" gate="G$1" x="459.74" y="121.92" smashed="yes">
-<attribute name="VALUE" x="458.724" y="125.476" size="1.778" layer="96"/>
+<instance part="SUPPLY9" gate="G$1" x="525.78" y="93.98" smashed="yes">
+<attribute name="VALUE" x="524.764" y="97.536" size="1.778" layer="96"/>
 </instance>
-<instance part="GND9" gate="1" x="467.36" y="96.52" smashed="yes">
-<attribute name="VALUE" x="464.82" y="93.98" size="1.778" layer="96"/>
+<instance part="GND9" gate="1" x="467.36" y="93.98" smashed="yes">
+<attribute name="VALUE" x="464.82" y="91.44" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY13" gate="G$1" x="538.48" y="124.46" smashed="yes">
-<attribute name="VALUE" x="537.464" y="128.016" size="1.778" layer="96"/>
-</instance>
-<instance part="GND13" gate="1" x="541.02" y="101.6" smashed="yes">
-<attribute name="VALUE" x="538.48" y="99.06" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="541.02" y="96.52" smashed="yes">
+<attribute name="VALUE" x="538.48" y="93.98" size="1.778" layer="96"/>
 </instance>
 <instance part="U$10" gate="G$1" x="411.48" y="50.8" smashed="yes">
 <attribute name="VALUE" x="409.956" y="51.816" size="1.27" layer="96"/>
@@ -7853,6 +7847,18 @@ Source: http://www.molex.com</description>
 <instance part="X2" gate="-4" x="647.7" y="0" smashed="yes">
 <attribute name="NAME" x="650.24" y="-0.762" size="1.524" layer="95"/>
 </instance>
+<instance part="F1" gate="F1" x="515.62" y="104.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="514.223" y="100.33" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="518.541" y="100.33" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R1" gate="G$1" x="464.82" y="104.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="463.3214" y="100.33" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="468.122" y="100.33" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R15" gate="G$1" x="538.48" y="106.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="536.9814" y="102.87" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="541.782" y="102.87" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8014,25 +8020,6 @@ Source: http://www.molex.com</description>
 </net>
 <net name="12V" class="0">
 <segment>
-<pinref part="CAN_CONN_IN" gate="G$1" pin="1"/>
-<wire x1="472.44" y1="114.3" x2="459.74" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="459.74" y1="114.3" x2="459.74" y2="119.38" width="0.1524" layer="91"/>
-<label x="464.82" y="114.3" size="1.778" layer="95"/>
-<pinref part="SUPPLY9" gate="G$1" pin="12V"/>
-<pinref part="F2" gate="F1" pin="2"/>
-<wire x1="459.74" y1="119.38" x2="459.74" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="459.74" y1="119.38" x2="513.08" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="513.08" y1="119.38" x2="513.08" y2="114.3" width="0.1524" layer="91"/>
-<junction x="459.74" y="119.38"/>
-</segment>
-<segment>
-<pinref part="SUPPLY13" gate="G$1" pin="12V"/>
-<pinref part="CAN_CONN_OUT" gate="G$1" pin="1"/>
-<wire x1="546.1" y1="116.84" x2="538.48" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="538.48" y1="116.84" x2="538.48" y2="124.46" width="0.1524" layer="91"/>
-<label x="541.02" y="116.84" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SUPPLY35" gate="G$1" pin="12V"/>
 <wire x1="198.12" y1="60.96" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="HD_LED" gate="G$1" pin="2"/>
@@ -8103,6 +8090,27 @@ Source: http://www.molex.com</description>
 <wire x1="436.88" y1="160.02" x2="431.8" y2="160.02" width="0.1524" layer="91"/>
 <junction x="431.8" y="160.02"/>
 </segment>
+<segment>
+<pinref part="CAN_CONN_IN" gate="G$1" pin="2"/>
+<label x="464.82" y="111.76" size="1.778" layer="95"/>
+<wire x1="472.44" y1="111.76" x2="459.74" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="CAN_CONN_OUT" gate="G$1" pin="2"/>
+<pinref part="F1" gate="F1" pin="2"/>
+<wire x1="459.74" y1="111.76" x2="457.2" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="546.1" y1="114.3" x2="515.62" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="114.3" x2="515.62" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="114.3" x2="515.62" y2="124.46" width="0.1524" layer="91"/>
+<junction x="515.62" y="114.3"/>
+<wire x1="515.62" y1="124.46" x2="459.74" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="459.74" y1="124.46" x2="459.74" y2="111.76" width="0.1524" layer="91"/>
+<junction x="459.74" y="111.76"/>
+</segment>
+<segment>
+<pinref part="F1" gate="F1" pin="1"/>
+<wire x1="515.62" y1="99.06" x2="515.62" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="93.98" x2="525.78" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="SUPPLY9" gate="G$1" pin="12V"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -8146,14 +8154,14 @@ Source: http://www.molex.com</description>
 <label x="525.78" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CAN_CONN_IN" gate="G$1" pin="5"/>
-<wire x1="492.76" y1="111.76" x2="502.92" y2="111.76" width="0.1524" layer="91"/>
-<label x="495.3" y="111.76" size="1.778" layer="95"/>
+<pinref part="CAN_CONN_IN" gate="G$1" pin="4"/>
+<wire x1="492.76" y1="114.3" x2="500.38" y2="114.3" width="0.1524" layer="91"/>
+<label x="495.3" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CAN_CONN_OUT" gate="G$1" pin="5"/>
-<wire x1="566.42" y1="114.3" x2="574.04" y2="114.3" width="0.1524" layer="91"/>
-<label x="566.42" y="114.3" size="1.778" layer="95"/>
+<pinref part="CAN_CONN_OUT" gate="G$1" pin="4"/>
+<wire x1="566.42" y1="116.84" x2="574.04" y2="116.84" width="0.1524" layer="91"/>
+<label x="566.42" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN_L" class="0">
@@ -8163,14 +8171,14 @@ Source: http://www.molex.com</description>
 <label x="525.78" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="472.44" y1="111.76" x2="467.36" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="CAN_CONN_IN" gate="G$1" pin="2"/>
-<label x="464.82" y="111.76" size="1.778" layer="95"/>
+<pinref part="CAN_CONN_IN" gate="G$1" pin="5"/>
+<wire x1="492.76" y1="111.76" x2="502.92" y2="111.76" width="0.1524" layer="91"/>
+<label x="495.3" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="546.1" y1="114.3" x2="538.48" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="CAN_CONN_OUT" gate="G$1" pin="2"/>
-<label x="538.48" y="114.3" size="1.778" layer="95"/>
+<pinref part="CAN_CONN_OUT" gate="G$1" pin="5"/>
+<wire x1="566.42" y1="114.3" x2="574.04" y2="114.3" width="0.1524" layer="91"/>
+<label x="566.42" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BRK" class="0">
@@ -8259,19 +8267,6 @@ Source: http://www.molex.com</description>
 <pinref part="LOGG_TRANS" gate="G$1" pin="RXCAN"/>
 <wire x1="485.14" y1="-22.86" x2="474.98" y2="-22.86" width="0.1524" layer="91"/>
 <label x="474.98" y="-22.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CAN+" class="0">
-<segment>
-<pinref part="CAN_CONN_IN" gate="G$1" pin="4"/>
-<wire x1="492.76" y1="114.3" x2="502.92" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="F2" gate="F1" pin="1"/>
-<label x="495.3" y="114.3" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CAN_CONN_OUT" gate="G$1" pin="4"/>
-<wire x1="566.42" y1="116.84" x2="574.04" y2="116.84" width="0.1524" layer="91"/>
-<label x="566.42" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A5" class="0">
@@ -8578,17 +8573,25 @@ Source: http://www.molex.com</description>
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="CAN_CONN_IN" gate="G$1" pin="3"/>
 <wire x1="472.44" y1="109.22" x2="467.36" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="467.36" y1="109.22" x2="467.36" y2="99.06" width="0.1524" layer="91"/>
 <label x="469.9" y="109.22" size="1.778" layer="95"/>
+<wire x1="467.36" y1="109.22" x2="467.36" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="467.36" y1="99.06" x2="467.36" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="464.82" y1="99.06" x2="467.36" y2="99.06" width="0.1524" layer="91"/>
+<junction x="467.36" y="99.06"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="541.02" y1="106.68" x2="541.02" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="541.02" y1="106.68" x2="541.02" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="CAN_CONN_OUT" gate="G$1" pin="3"/>
 <wire x1="546.1" y1="111.76" x2="541.02" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="541.02" y1="111.76" x2="541.02" y2="104.14" width="0.1524" layer="91"/>
 <label x="541.02" y="111.76" size="1.778" layer="95"/>
-<junction x="541.02" y="104.14"/>
+<junction x="541.02" y="99.06"/>
+<wire x1="541.02" y1="111.76" x2="541.02" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="541.02" y1="101.6" x2="541.02" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="538.48" y1="101.6" x2="541.02" y2="101.6" width="0.1524" layer="91"/>
+<junction x="541.02" y="101.6"/>
 </segment>
 <segment>
 <wire x1="406.4" y1="30.48" x2="406.4" y2="22.86" width="0.1524" layer="91"/>
@@ -9326,6 +9329,24 @@ Source: http://www.molex.com</description>
 <pinref part="JP5" gate="A" pin="14"/>
 <wire x1="436.88" y1="-2.54" x2="447.04" y2="-2.54" width="0.1524" layer="91"/>
 <label x="441.96" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN_SHIELD_2" class="0">
+<segment>
+<pinref part="CAN_CONN_IN" gate="G$1" pin="1"/>
+<wire x1="472.44" y1="114.3" x2="464.82" y2="114.3" width="0.1524" layer="91"/>
+<label x="472.44" y="121.92" size="1.778" layer="95"/>
+<wire x1="464.82" y1="114.3" x2="464.82" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="CAN_SHIELD" class="0">
+<segment>
+<pinref part="CAN_CONN_OUT" gate="G$1" pin="1"/>
+<wire x1="546.1" y1="116.84" x2="538.48" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="538.48" y1="116.84" x2="538.48" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<label x="541.02" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
