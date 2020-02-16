@@ -10583,7 +10583,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="327.66" y1="48.26" x2="327.66" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="50.8" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
 <junction x="134.62" y="50.8"/>
-<label x="172.72" y="60.96" size="7.62" layer="95"/>
+<label x="172.72" y="60.96" size="2.54" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
